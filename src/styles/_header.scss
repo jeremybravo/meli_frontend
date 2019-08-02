@@ -1,0 +1,80 @@
+.nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-brand;
+  width: 100%;
+  height: 55px;
+  padding: 3px 0;
+  cursor: default;
+}
+
+.nav-logo {
+  background-image: url('../../public/assets/logo_ml.png');
+  @include image-2x('../../public/assets/logo_ml@2x.png', 53px, 36px);
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 53px;
+  text-indent: -999px;
+  margin-right: 10px;
+}
+
+.nav-search {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.5;
+  max-width: 622px;
+  height: 54px;
+  left: -1px;
+  align-items: center;
+}
+
+.nav-search-input {
+  height: 39px;
+  width: 100%;
+  border-radius: 3px 0 0 3px;
+  border: 0;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  background-color: $section-bg;
+  padding: 3px 35px 3px 15px;
+  position: relative;
+}
+
+.nav-search-btn {
+  border: none;
+  outline: none;
+  background-color: $bg-color;
+  border-radius: 0 3px 3px 0px;
+  width: 46px;
+  height: 45px;
+  position: relative;
+
+  .nav-icon-search {
+    background-image: url('../../public/assets/ic_search.png');
+    @include image-2x('../../public/assets/ic_search@2x.png', 18px, 18px);
+    height: 18px;
+    width: 18px;
+    right: 10px;
+    top: 14px;
+    position: absolute;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-search-btn {
+    display: none;
+  }
+
+  .nav-search-input {
+    border-radius: 3px;
+  }
+
+  .nav-search {
+    flex: 0.8;
+  }
+}

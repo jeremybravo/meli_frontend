@@ -1,0 +1,74 @@
+{
+  "name": "mercadolibre-test-frontend",
+  "version": "1.0.0",
+  "description": "Test Frontend para MercadoLibre",
+  "main": "server.js",
+  "scripts": {
+    "meli_test": "jest --no-cache",
+    "meli_dev": "node server.js",
+    "meli_build": "webpack --config webpack.prod.config.js",
+    "meli_start": "NODE_ENV=production node server.js"
+  },
+  "keywords": [
+    "frontend",
+    "mercadolibre",
+    "meli",
+    "test"
+  ],
+  "author": "Jeremy Bravo",
+  "license": "MIT",
+  "repository": "https://github.com/jeremybravo/meli_frontend.git",
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "history": "^4.7.2",
+    "prop-types": "^15.6.0",
+    "query-string": "^5.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0-beta.15",
+    "react-md-spinner": "^0.2.5",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.0.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-react": "^7.5.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "jest": "^22.1.4",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^2.0.10",
+    "prettier": "^1.10.2",
+    "redux-devtools": "^3.4.1",
+    "regenerator-runtime": "^0.11.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-hot-middleware": "^2.21.0"
+  }
+}
