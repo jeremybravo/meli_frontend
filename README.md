@@ -20,7 +20,7 @@ Instalar dependencias
 $ npm install
 ```
 
-Ejecutar Tests
+Test
 
 ```
 $ npm run meli_test
@@ -32,8 +32,8 @@ Dev
 $ npm run meli_dev
 ```
 
-Production
+Build
 
 ```
-$ npm run meli_start
+$ npm run meli_build
 ```
