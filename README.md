@@ -23,17 +23,17 @@ $ npm install
 Ejecutar Tests
 
 ```
-$ npm run test
+$ npm run meli_test
 ```
 
 Dev
 
 ```
-$ npm run dev
+$ npm run meli_dev
 ```
 
 Production
 
 ```
-$ npm run start
+$ npm run meli_start
 ```
