@@ -30,11 +30,12 @@ const store = createStore(
   applyMiddleware(thunkMiddleware, middleware)
 )
 
-ReactDOM.render(
+const Root = (
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <App />
     </ConnectedRouter>
-  </Provider>,
-  document.getElementById('root')
-)
+  </Provider>
+);
+
+ReactDOM.render(Root, document.getElementById('root'));

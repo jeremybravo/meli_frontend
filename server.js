@@ -42,7 +42,7 @@ app.get('*', function(req, res) {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 
-let port = 1512;
+let port = 4444;
 app.listen(port, () =>
   console.log(`Meli APP is listening on port `,port)
 )
