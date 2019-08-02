@@ -5,7 +5,7 @@
 * Node JS
 * Express
 * React JS
-* Redux v5
+* Redux 
 * Webpack
 * Sass
 * Jest
