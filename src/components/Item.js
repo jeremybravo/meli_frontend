@@ -5,7 +5,9 @@ const Item = ({ item, onItemClick }) => {
     <li key={item.id} className="results-item">
       <div className="row-item">
         <div className="results-item-image">
-          <img src={item.picture} alt={item.title} />
+          <a onClick={() => onItemClick(item.id)}>
+            <img src={item.picture} alt={item.title} />
+          </a>
         </div>
         <div className="results-item-info">
           <div className="item-location">{item.location}</div>

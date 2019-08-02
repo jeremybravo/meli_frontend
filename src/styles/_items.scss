@@ -32,6 +32,11 @@
     height: auto;
     width: 100%;
   }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 .results-item-info {
@@ -85,6 +90,11 @@
     img {
       height: auto;
       width: 100%;
+    }
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
     }
   }
 
